@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+
+main {
+  min-height: 80vh;
+  padding: 25px;
+}
+
+.app {
+  background: url("pexels-maria-orlova-4947737.jpg") bottom;
+  background-size: cover;
+  transition: 0.5s ease-in-out;
+  width: 350px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 3px #aeb2fae3;
+}
+
+.app.warm {
+  background-image: url("pexels-ethan-jones-3222441.jpg");
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  outline: none;
+  background: none;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(240, 255, 252, 0.8);
+  appearance: none;
+  display: block;
+  box-shadow: 2px 1px rgba(216, 221, 220, 0.747);
+  transition: 0.5s ease;
+}
+
+.search-box input[type="text"] {
+  text-align: center;
+}
+
+.search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.932);
+}
+
+.location-box .location {
+  color: rgb(78 166 253 / 95%);
+  text-shadow: 1px 1px 3px rgb(230, 231, 233);
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.location-box .date {
+  color: rgb(248, 246, 253);
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  font-size: 45px;
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin: 30px auto;
+  background-color: rgba(247, 247, 247, 0.26);
+  border-radius: 5px;
+  color: rgb(143, 197, 250);
+}
+
+.weather-box .weather {
+  font-size: 35px;
+  position: relative;
+  font-weight: bold;
+  bottom: 15px;
+  color: rgb(241, 240, 228);
+}

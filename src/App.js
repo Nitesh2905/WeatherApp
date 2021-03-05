@@ -2,11 +2,9 @@ import { useState } from 'react'
 import Moment from 'react-moment';
 import 'moment-timezone';
 import './App.css';
+import api from './Api'
 
-const api = {
-  key: "58e496b32b2922c9ba050d27de7397e6",
-  base: "https://api.openweathermap.org/data/2.5/",
-};
+
 
 function App() {
 
